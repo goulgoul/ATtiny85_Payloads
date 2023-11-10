@@ -1,3 +1,4 @@
+.gitignore
 DigistumpArduino
 **/.pio
 **/.vscode
