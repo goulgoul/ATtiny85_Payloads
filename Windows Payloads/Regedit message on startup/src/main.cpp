@@ -9,12 +9,12 @@
 void setup()
 {
     DigiKeyboard.sendKeyStroke(0);
-    delay(500);
+    delay(1000);
 
     LED_ENABLE();
     LED_ON();
 
-    RUN_CMD_AS_ADMIN(1000, 2000);
+    RUN_CMD_AS_ADMIN(2000, 5000);
     delay(5000);
 
 #ifdef BAD_USB
