@@ -20,10 +20,10 @@ REG ADD HKML\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v legaln
 
 *Clearing the entries*
 ```
-REG ADD HKML\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v legalnoticecaption /t REG_SZ /d "" /f
+REG DELETE HKML\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v legalnoticecaption /f
 ```
 ```
-REG ADD HKML\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v legalnoticetext /t REG_SZ /d "" /f
+REG DELETE HKML\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v legalnoticetext /f
 ```
-In addition, the code provides a way to clear these registry entries by commenting the line `#define BAD_USB` at the top of the script.
+In addition, the code provides a way to clear these registry entries by commenting the line `#define BAD_USB` at the top of the script in `src/main.cpp`.
 All other definitions and macros are written in the `define.h` file in `include` folder. 

@@ -2,7 +2,7 @@
 #include <defines.h>
 
 //! Define comment the following line to restore the register value
-#define BAD_USB
+#define BAD_USB 
 //!
 
 

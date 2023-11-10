@@ -30,8 +30,9 @@ REG ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System \
 /v legalnoticetext /t REG_SZ \
 /d \"La prochaine fois que tu me laisses tout seul, verrouille-moi !!!\" /f"
 
-#define CMD_CLEAR_REG_ENTRY_FOR_POPUP_ON_STARTUP "REG ADD \
+#define CMD_CLEAR_REG_ENTRY_FOR_POPUP_ON_STARTUP "REG DELETE \
 HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System \
-/v legalnoticecaption /t REG_SZ /d \"\" /f && \
-REG ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System \
-/v legalnoticetext /t REG_SZ /d \"\" /f"
+/v legalnoticecaption /f && \
+REG DELETE \
+HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System \
+/v legalnoticetext /f"
