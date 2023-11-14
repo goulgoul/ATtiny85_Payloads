@@ -11,7 +11,7 @@ void setup()
     DigiKeyboard.sendKeyStroke(KEY_T, MOD_CONTROL_LEFT | MOD_ALT_LEFT);
     delay(500);
 
-    DigiKeyboard.println("export PS1=$PS1$\'\\n\'\'\%F{#EAC6BA}8=========\%F{#E93A9A}D\%f -.. \'");
+    DigiKeyboard.println("export PS1=$PS1$\'\\n\'\'\%F{#EAC6BA}8=========\%F{#E93A9A}D\%f -.. \' && exit    ");
     PORTB &= 0 << PB1;
 }
 
